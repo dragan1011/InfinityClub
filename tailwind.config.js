@@ -9,11 +9,12 @@ module.exports = {
       spacing: {
         '945' : '9.45rem',
       },
-      maxWidth: {
-        '5': '5rem',
-      }
-  
-      
+      fontFamily:{
+        tacs: 'The Amoret Collection Script'
+      },
+      letterSpacing: {
+        custom: '0.64px'
+      },
     },
   },
   plugins: [],

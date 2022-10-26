@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import Button from "./UI/Button";
 
@@ -11,7 +12,7 @@ const Hero = () => {
           className="inline-block max-sm:mt-20 max-sm:scale-75"
           src="/utilities/infinity_logo_2.png"
         />
-        <h2 className="text-6xl max-sm:text-xl">Bar & Restaurant</h2>
+        <h2 className="text-6xl max-sm:text-4xl font-tacs">Bar & Restaurant</h2>
         <p className="pb-24 pt-6 text-[#E5E5E5]">
           Welcome to the best clubbing experience in Graz
         </p>
@@ -23,14 +24,18 @@ const Hero = () => {
       <div className="absolute text-[#E5E5E5] left-0 right-2/4 bottom-32 text-lg">
         <div>Follow Us On</div>
       </div>
-      <div className="absolute left-1/4 right-0 bottom-24 text-lg">
+      <div className="absolute left-1/4 right-0 bottom-24 text-lg z-20">
         <div className="flex">
-          <img
-            src="/utilities/facebook.png"
-            className="mr-2 -ml-14"
-            alt="Facebook"
-          />
-          <img src="/utilities/instagram.png" alt="Intagram" />
+          <Link href={"www.facebook.com"} passHref={true}>
+            <img
+              src="/utilities/facebook.png"
+              className="mr-2 -ml-14"
+              alt="Facebook"
+            />
+          </Link>
+          <Link href="www.instagram.com" passHref={true}>
+            <img src="/utilities/instagram.png" alt="Intagram" />
+          </Link>
         </div>
       </div>
     </div>
