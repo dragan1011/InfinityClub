@@ -2,7 +2,7 @@ import React from "react";
 
 function About() {
   return (
-    <div>
+    <div id="about">
       <div>
         <h2
           className="uppercase max-w-xs text-[50px] text-[#EAD185] font-tacs tracking-custom

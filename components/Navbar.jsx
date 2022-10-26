@@ -1,4 +1,4 @@
-import Link from "next/link";
+import { Link } from "react-scroll";
 import React, { useState } from "react";
 
 function Navbar() {
@@ -9,23 +9,58 @@ function Navbar() {
   };
 
   return (
-    <div className="fixed left-0 top-0 w-full z-10 ease-in duration-300">
+    <div className="fixed left-0 top-0 w-full ease-in duration-300 z-30">
       <div className="max-w-[1240px] m-auto text-xl flex justify-between items-center p-4 text-[#AFAFAF]">
-        <Link href="/">
+        <Link href="hero">
           <img src="/utilities/logo.png" className="max-sm:scale-75" />
         </Link>
         <ul className="hidden sm:flex">
           <li className="p-4 hover:text-[#EAD185] duration-300">
-            <Link href="/">Home</Link>
+            <Link
+              to="hero"
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={500}
+              className="cursor-pointer"
+            >
+              Home
+            </Link>
           </li>
           <li className="p-4 hover:text-[#EAD185] duration-300">
-            <Link href="/about">About</Link>
+            <Link
+              to="about"
+              smooth={true}
+              offset={50}
+              duration={500}
+              className="cursor-pointer"
+            >
+              About
+            </Link>
           </li>
           <li className="p-4 hover:text-[#EAD185] duration-300">
-            <Link href="/location">Location</Link>
+            <Link
+              to="about"
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={500}
+              className="cursor-pointer"
+            >
+              Location
+            </Link>
           </li>
           <li className="p-4 hover:text-[#EAD185] duration-300">
-            <Link href="/menu">Menu</Link>
+            <Link
+              to="about"
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={500}
+              className="cursor-pointer"
+            >
+              Menu
+            </Link>
           </li>
         </ul>
 
@@ -46,16 +81,52 @@ function Navbar() {
         >
           <ul>
             <li className="p-4 text-4xl hover:text-[#EAD185]">
-              <Link href="/">Home</Link>
+              <Link
+                to="hero"
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={500}
+                className="cursor-pointer"
+              >
+                Home
+              </Link>
             </li>
             <li className="p-4 text-4xl hover:text-[#EAD185]">
-              <Link href="/about">About</Link>
+              <Link
+                to="about"
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={500}
+                className="cursor-pointer"
+              >
+                About
+              </Link>
             </li>
             <li className="p-4 text-4xl hover:text-[#EAD185]">
-              <Link href="/location">Location</Link>
+              <Link
+                to="about"
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={500}
+                className="cursor-pointer"
+              >
+                Location
+              </Link>
             </li>
             <li className="p-4 text-4xl hover:text-[#EAD185]">
-              <Link href="/menu">Menu</Link>
+              <Link
+                to="about"
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={500}
+                className="cursor-pointer"
+              >
+                Menu
+              </Link>
             </li>
           </ul>
         </div>

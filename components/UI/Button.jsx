@@ -1,6 +1,6 @@
 import React from "react";
 
-function Button({ children, type, onClick, className }) {
+function Button({ children, type, onClick }) {
   return (
     <button
       className="px-14 py-3 border border-[#EAD185] mr-3 w-[200px] bg-black/30
