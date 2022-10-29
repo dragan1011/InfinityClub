@@ -40,7 +40,7 @@ function Navbar() {
           </li>
           <li className="p-4 hover:text-[#EAD185] duration-300">
             <Link
-              to="about"
+              to="find_us"
               spy={true}
               smooth={true}
               offset={50}
@@ -52,7 +52,7 @@ function Navbar() {
           </li>
           <li className="p-4 hover:text-[#EAD185] duration-300">
             <Link
-              to="about"
+              to="menu"
               spy={true}
               smooth={true}
               offset={50}

@@ -2,8 +2,8 @@ import React from "react";
 
 function About() {
   return (
-    <div>
-      <h2 className="text-6xl mx-[18rem] max-sm:text-4xl max-w-[50px] uppercase text-[50px] text-[#EAD185] font-tacs tracking-custom max-[800px]:ml-[10rem] max-[350px]:ml-[3rem] max-[270px]:ml-[0]">
+    <div id="about">
+      <h2 className="text-6xl mx-[18rem] max-sm:text-4xl max-w-[50px] uppercase text-[50px] text-[#EAD185] font-tacs tracking-custom max-[800px]:ml-[10rem] max-[350px]:ml-[3rem] max-phone:ml-[1rem] animate__animated animate__fadeInUp">
         About Infinity
       </h2>
       <div className="my-[5rem] mx-[15rem] grid grid-cols-2 gap-4 text-[#E5E5E5] max-[1250px]:grid-cols-1 max-[1250px]:text-left max-[1250px]:justify-center max-[1250px]:mx-[10rem] max-[1250px]:flex max-[1250px]:flex-col-reverse max-[1250px]:items-center max-[305px]:m-0 ">

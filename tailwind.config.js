@@ -15,6 +15,14 @@ module.exports = {
       letterSpacing: {
         custom: '0.64px'
       },
+      screens: {
+        'small-tablet' : '500px',
+        'big-phone' :'450px',
+        'phone': '350px',
+        'mid-phone': '300px',
+        'small-phone':'250px'
+      },
+
     },
   },
   plugins: [],

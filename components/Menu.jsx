@@ -7,14 +7,14 @@ import "swiper/css";
 
 function Menu() {
   return (
-    <div>
-      <h2 className="text-6xl mx-[18rem] max-sm:text-4xl uppercase text-[50px] text-[#EAD185] font-tacs tracking-custom max-[800px]:ml-[10rem] max-[350px]:ml-[3rem] max-[270px]:ml-[0]">
+    <div id="menu">
+      <h2 className="text-6xl mx-[18rem] max-sm:text-4xl uppercase text-[50px] text-[#EAD185] font-tacs tracking-custom max-md:ml-[10rem] max-phone:ml-[1rem]">
         Our Menu
       </h2>
       <div className="my-[5rem]">
         <div className="max-w-[1000px] relative ml-auto mr-auto ">
           <Swiper spaceBetween={0} slidesPerView={"auto"} loop={true}>
-            <SwiperSlide className="max-w-[200px] text-center items-center justify-center border-x border-[#FFFFFF10] bg-[#2A2A2A] py-5 px-10 max-h-[100px] hover:bg-[#EAD18596] duration-300">
+            <SwiperSlide className="max-w-[200px] text-center items-center justify-center border-x border-[#FFFFFF10] bg-[#EAD18596] py-5 px-10 max-h-[100px] hover:bg-[#EAD18596] duration-300">
               <img
                 src="/utilities/Champaigns.png"
                 alt="Champaigns"
@@ -56,8 +56,8 @@ function Menu() {
             </SwiperSlide>
           </Swiper>
         </div>
-        <div className="ml-[15rem] grid grid-cols-2 max-[1250px]:grid-cols-1 ">
-          <div className="grid grid-cols-2 gap-4 max-[650px]:ml-[-15rem]">
+        <div className="ml-[15rem] grid grid-cols-2 max-[1250px]:grid-cols-1 max-md:ml-[6rem] max-small-tablet:ml-[5rem] max-big-phone:ml-[3rem] max-small-phone:ml-[1rem] ">
+          <div className="grid grid-cols-2 gap-4">
             <div className="flex flex-col">
               <Span>Heißgetränke</Span>
               <P>Verlängerter</P>
@@ -68,9 +68,10 @@ function Menu() {
               <P>Espresso</P>
               <P>Tee div, Sorten</P>
             </div>
-            <div className="flex flex-col">
+            <div className="flex flex-col max-md:ml-[7rem] max-small-tablet:ml-[5rem] max-phone:ml-[3rem]">
               <P></P>
               <P></P>
+              <div className="mt-[1.5rem] max-mid-phone:mt-[2rem]"></div>
               <P>2,90 €</P>
               <P>3.20 €</P>
               <P>3.50 €</P>
@@ -90,9 +91,10 @@ function Menu() {
               <P>Gruntee-Kaktusfeige Prickelnd</P>
               <P>Gruntee-Kaktusfeige Still</P>
             </div>
-            <div className="flex flex-col">
+            <div className="flex flex-col max-md:ml-[7rem] max-small-tablet:ml-[5rem] max-phone:ml-[3rem]">
               <P></P>
               <P></P>
+              <div className="mt-[1.5rem]"></div>
               <P>4.20€</P>
               <P>3.90 €</P>
               <P>4.20 €</P>
@@ -108,9 +110,10 @@ function Menu() {
               <P>Römerquelle Still</P>
               <P>Soda Zitrone</P>
             </div>
-            <div className="flex flex-col">
+            <div className="flex flex-col max-md:ml-[7rem] max-small-tablet:ml-[5rem] max-phone:ml-[3rem]">
               <P></P>
               <P></P>
+              <div className="mt-[1.5rem]"></div>
               <P>2,90 €</P>
               <P>2,90 €</P>
               <P>2,90 €</P>
