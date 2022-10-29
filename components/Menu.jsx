@@ -1,56 +1,122 @@
 import React from "react";
-import MenuCard from "./UI/MenuCard";
+import { Swiper, SwiperSlide } from "swiper/react";
+
+import { Span, P } from "./UI/Text";
+
+import "swiper/css";
 
 function Menu() {
   return (
-    <div id="menu">
-      <h2
-        className="uppercase text-[50px] text-[#EAD185] font-tacs tracking-custom
-           absolute left-[25%] top-[250%] max-xl:left-[15%] max-lg:left-[25%] max-md:left-[20%] max-[850px]:left-[15%] max-[285px]:left-[10%] max-sm:text-4xl"
-      >
+    <div>
+      <h2 className="text-6xl mx-[18rem] max-sm:text-4xl uppercase text-[50px] text-[#EAD185] font-tacs tracking-custom max-[800px]:ml-[10rem] max-[350px]:ml-[3rem] max-[270px]:ml-[0]">
         Our Menu
       </h2>
-      <div className="flex absolute left-[20%] top-[260%]">
-        <MenuCard className="text-[#475251]">
-          <img
-            className="relative ml-auto mr-auto top-1/4"
-            src="/utilities/Champaigns.png"
-            alt=""
-          />
-          <h3 className="mt-[2rem] absolute left-[5%]">Champaigns</h3>
-        </MenuCard>
-        <MenuCard className="text-[#475251]">
-          <img
-            className="relative ml-auto mr-auto top-1/4"
-            src="/utilities/Wine.png"
-            alt=""
-          />
-          <h3 className="mt-[2rem] absolute left-[28%]">Wine</h3>
-        </MenuCard>
-        <MenuCard className="text-[#475251]">
-          <img
-            className="relative ml-auto mr-auto top-1/4"
-            src="/utilities/Coctails.png"
-            alt=""
-          />
-          <h3 className="mt-[2rem] absolute left-[47.5%]">Coctails</h3>
-        </MenuCard>
-        <MenuCard className="text-[#475251]">
-          <img
-            className="relative ml-auto mr-auto top-1/4"
-            src="/utilities/Non-alcoholic.png"
-            alt=""
-          />
-          <h3 className="mt-[2rem] absolute left-[66%]">Non-alcoholic</h3>
-        </MenuCard>
-        <MenuCard className="text-[#475251]">
-          <img
-            className="relative ml-auto mr-auto top-1/4"
-            src="/utilities/Food.png"
-            alt=""
-          />
-          <h3 className="mt-[2rem] absolute left-[88.3%]">Food</h3>
-        </MenuCard>
+      <div className="my-[5rem]">
+        <div className="max-w-[1000px] relative ml-auto mr-auto ">
+          <Swiper spaceBetween={0} slidesPerView={"auto"} loop={true}>
+            <SwiperSlide className="max-w-[200px] text-center items-center justify-center border-x border-[#FFFFFF10] bg-[#2A2A2A] py-5 px-10 max-h-[100px] hover:bg-[#EAD18596] duration-300">
+              <img
+                src="/utilities/Champaigns.png"
+                alt="Champaigns"
+                className="realtive ml-auto mr-auto"
+              />
+              <span>Champaigns</span>
+            </SwiperSlide>
+            <SwiperSlide className="max-w-[200px] text-center items-center justify-center border-x border-[#FFFFFF10] bg-[#2A2A2A] py-6 px-10 max-h-[100px] hover:bg-[#EAD18596] duration-300">
+              <img
+                src="/utilities/Wine.png"
+                alt="Wine"
+                className="realtive ml-auto mr-auto"
+              />
+              <span>Wine</span>
+            </SwiperSlide>
+            <SwiperSlide className="max-w-[200px] text-center items-center justify-center border-x border-[#FFFFFF10] bg-[#2A2A2A] py-5 px-10 max-h-[100px] hover:bg-[#EAD18596] duration-300">
+              <img
+                src="/utilities/Coctails.png"
+                alt="Coctails"
+                className="realtive ml-auto mr-auto"
+              />
+              <span>Coctails</span>
+            </SwiperSlide>
+            <SwiperSlide className="max-w-[200px] text-center items-center justify-center border-x border-[#FFFFFF10] bg-[#2A2A2A] py-6 px-5 max-h-[100px] hover:bg-[#EAD18596] duration-300">
+              <img
+                src="/utilities/Non-alcoholic.png"
+                alt="Non-alcoholic"
+                className="realtive ml-auto mr-auto"
+              />
+              <span>Non-alcoholic</span>
+            </SwiperSlide>
+            <SwiperSlide className="max-w-[200px] text-center items-center justify-center border-x border-[#FFFFFF10] bg-[#2A2A2A] py-6 px-10] max-h-[100px] hover:bg-[#EAD18596] duration-300">
+              <img
+                src="/utilities/Food.png"
+                alt="Food"
+                className="realtive ml-auto mr-auto"
+              />
+              <span>Food</span>
+            </SwiperSlide>
+          </Swiper>
+        </div>
+        <div className="ml-[15rem] grid grid-cols-2 max-[1250px]:grid-cols-1 ">
+          <div className="grid grid-cols-2 gap-4 max-[650px]:ml-[-15rem]">
+            <div className="flex flex-col">
+              <Span>Heißgetränke</Span>
+              <P>Verlängerter</P>
+              <P>Cappuccino</P>
+              <P>Caffe Latte</P>
+              <P>Kleiner Brauner</P>
+              <P>Großer Brauner</P>
+              <P>Espresso</P>
+              <P>Tee div, Sorten</P>
+            </div>
+            <div className="flex flex-col">
+              <P></P>
+              <P></P>
+              <P>2,90 €</P>
+              <P>3.20 €</P>
+              <P>3.50 €</P>
+              <P>2.60 €</P>
+              <P>3.90 €</P>
+              <P>2.60 €</P>
+              <P>2.60 €</P>
+            </div>
+          </div>
+          <div className="grid grid-cols-2 gap-4 ">
+            <div className="flex flex-col">
+              <Span>Bio-Limonaden</Span>
+              <P>Lemon Prickelnd</P>
+              <P>Lemon Still</P>
+              <P>Kirsche Prickelnd</P>
+              <P>Kirsche Still</P>
+              <P>Gruntee-Kaktusfeige Prickelnd</P>
+              <P>Gruntee-Kaktusfeige Still</P>
+            </div>
+            <div className="flex flex-col">
+              <P></P>
+              <P></P>
+              <P>4.20€</P>
+              <P>3.90 €</P>
+              <P>4.20 €</P>
+              <P>3.90 €</P>
+              <P>4.20 €</P>
+              <P>3.90 €</P>
+            </div>
+          </div>
+          <div className="grid grid-cols-2 gap-4 mt-10">
+            <div className="flex flex-col">
+              <Span>Soda, Mineral</Span>
+              <P>Römerquelle Prickelnd</P>
+              <P>Römerquelle Still</P>
+              <P>Soda Zitrone</P>
+            </div>
+            <div className="flex flex-col">
+              <P></P>
+              <P></P>
+              <P>2,90 €</P>
+              <P>2,90 €</P>
+              <P>2,90 €</P>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
