@@ -5,14 +5,56 @@ import { Span, P } from "./UI/Text";
 
 import "swiper/css";
 
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { useEffect } from "react";
+
+const boxVariantLeft = {
+  visible: { opacity: 1, scale: 1, x: 0, transition: { duration: 0.8 } },
+  hidden: { opacity: 0, scale: 0, x: -400 },
+};
+
+const boxVariantRight = {
+  visible: { opacity: 1, scale: 1, x: 0, transition: { duration: 0.8 } },
+  hidden: { opacity: 0, scale: 0, x: 400 },
+};
+
+const boxVariant = {
+  visible: { opacity: 1, scale: 1, x: 0, transition: { duration: 0.8 } },
+  hidden: { opacity: 0, scale: 0, x: 0 },
+};
+
 function Menu() {
+  const control = useAnimation();
+  const [ref, inView] = useInView();
+
+  useEffect(() => {
+    if (inView) {
+      control.start("visible");
+    } else {
+      control.start("hidden");
+    }
+  }, [control, inView]);
+
   return (
     <div id="menu">
-      <h2 className="text-6xl mx-[18rem] max-sm:text-4xl uppercase text-[50px] text-[#EAD185] font-tacs tracking-custom max-md:ml-[10rem] max-phone:ml-[1rem]">
+      <motion.h2
+        ref={ref}
+        variants={boxVariant}
+        initial="hidden"
+        animate={control}
+        className="text-6xl mx-[18rem] max-sm:text-4xl uppercase text-[50px] text-[#EAD185] font-tacs tracking-custom max-md:ml-[10rem] max-phone:ml-[1rem]"
+      >
         Our Menu
-      </h2>
+      </motion.h2>
       <div className="my-[5rem]">
-        <div className="max-w-[1000px] relative ml-auto mr-auto ">
+        <motion.div
+          ref={ref}
+          variants={boxVariant}
+          initial="hidden"
+          animate={control}
+          className="max-w-[1000px] relative ml-auto mr-auto "
+        >
           <Swiper spaceBetween={0} slidesPerView={"auto"} loop={true}>
             <SwiperSlide className="max-w-[200px] text-center items-center justify-center border-x border-[#FFFFFF10] bg-[#EAD18596] py-5 px-10 max-h-[100px] hover:bg-[#EAD18596] duration-300">
               <img
@@ -55,9 +97,15 @@ function Menu() {
               <span>Food</span>
             </SwiperSlide>
           </Swiper>
-        </div>
+        </motion.div>
         <div className="ml-[15rem] grid grid-cols-2 max-[1250px]:grid-cols-1 max-md:ml-[6rem] max-small-tablet:ml-[5rem] max-big-phone:ml-[3rem] max-small-phone:ml-[1rem] ">
-          <div className="grid grid-cols-2 gap-4">
+          <motion.div
+            ref={ref}
+            variants={boxVariantLeft}
+            initial="hidden"
+            animate={control}
+            className="grid grid-cols-2 gap-4"
+          >
             <div className="flex flex-col">
               <Span>Heißgetränke</Span>
               <P>Verlängerter</P>
@@ -80,8 +128,14 @@ function Menu() {
               <P>2.60 €</P>
               <P>2.60 €</P>
             </div>
-          </div>
-          <div className="grid grid-cols-2 gap-4 ">
+          </motion.div>
+          <motion.div
+            ref={ref}
+            variants={boxVariantRight}
+            initial="hidden"
+            animate={control}
+            className="grid grid-cols-2 gap-4 "
+          >
             <div className="flex flex-col">
               <Span>Bio-Limonaden</Span>
               <P>Lemon Prickelnd</P>
@@ -102,8 +156,14 @@ function Menu() {
               <P>4.20 €</P>
               <P>3.90 €</P>
             </div>
-          </div>
-          <div className="grid grid-cols-2 gap-4 mt-10">
+          </motion.div>
+          <motion.div
+            ref={ref}
+            variants={boxVariantLeft}
+            initial="hidden"
+            animate={control}
+            className="grid grid-cols-2 gap-4 mt-10"
+          >
             <div className="flex flex-col">
               <Span>Soda, Mineral</Span>
               <P>Römerquelle Prickelnd</P>
@@ -118,7 +178,7 @@ function Menu() {
               <P>2,90 €</P>
               <P>2,90 €</P>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>

@@ -1,9 +1,33 @@
 import React from "react";
 import { Link } from "react-scroll";
 
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { useEffect } from "react";
+
+const boxVariant = {
+  visible: { opacity: 1, scale: 1, x: 0, transition: { duration: 0.3 } },
+  hidden: { opacity: 0, scale: 0, x: 0 },
+};
+
 function Footer() {
+  const control = useAnimation();
+  const [ref, inView] = useInView();
+
+  useEffect(() => {
+    if (inView) {
+      control.start("visible");
+    } else {
+      control.start("hidden");
+    }
+  }, [control, inView]);
   return (
-    <div>
+    <motion.div
+      ref={ref}
+      variants={boxVariant}
+      initial="hidden"
+      animate={control}
+    >
       <div className=" my-[5rem] mx-[10rem] grid grid-cols-6 gap-4 text-[#E5E5E5] max-md:grid-cols-1 max-md:text-center max-md:justify-center max-small-tablet:mx-[2rem]">
         <div>
           <Link href="hero">
@@ -86,7 +110,7 @@ function Footer() {
           <span className="text-[#EAD18559] underline ml-1">Blueduck</span>
         </p>
       </div>
-    </div>
+    </motion.div>
   );
 }
 
