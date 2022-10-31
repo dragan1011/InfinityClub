@@ -1,67 +1,32 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import { SP, SPB } from "./UI/Text";
 
-import { motion, useAnimation } from "framer-motion";
-import { useInView } from "react-intersection-observer";
-import { useEffect } from "react";
-
-const boxVariantLeft = {
-  visible: { opacity: 1, scale: 1, x: 0, transition: { duration: 0.8 } },
-  hidden: { opacity: 0, scale: 0, x: -500 },
-};
-
-const boxVariantRight = {
-  visible: { opacity: 1, scale: 1, x: 0, transition: { duration: 0.8 } },
-  hidden: { opacity: 0, scale: 0, x: 500 },
-};
-
-const boxVariant = {
-  visible: { opacity: 1, scale: 1, x: 0, transition: { duration: 0.8 } },
-  hidden: { opacity: 0, scale: 0, x: 0 },
-};
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 function FindUs() {
-  const control = useAnimation();
-  const [ref, inView] = useInView();
-
   useEffect(() => {
-    if (inView) {
-      control.start("visible");
-    } else {
-      control.start("hidden");
-    }
-  }, [control, inView]);
-
+    Aos.init({ duration: 1000 });
+  }, []);
   return (
     <div id="find_us">
       <div>
-        <motion.div
-          ref={ref}
-          variants={boxVariantLeft}
-          initial="hidden"
-          animate={control}
+        <div
+          data-aos="fade-up"
+          data-aos-duration="3000"
           className="text-6xl ml-[18rem] max-sm:text-4xl text-[50px] text-[#EAD185] font-tacs tracking-custom max-[800px]:ml-[10rem] max-[450px]:ml-[3rem] max-phone:ml-[1rem]"
         >
           <h2>FIND US</h2>
           <p className="text-[#E5E5E5] text-[20px] mt-5">
             In the heart of the Graz
           </p>
-        </motion.div>
+        </div>
 
-        <motion.div
-          ref={ref}
-          variants={boxVariant}
-          initial="hidden"
-          animate={control}
-          className="my-[5rem]"
-        >
+        <div data-aos="fade-up" data-aos-duration="3000" className="my-[5rem]">
           <div className="bg-[#2A2A2A] max-w-[1000px] relative ml-auto mr-auto grid grid-cols-2 max-[1250px]:grid-cols-1 max-[1250px]:text-left max-[1250px]:justify-center">
-            <motion.div
-              ref={ref}
-              variants={boxVariantLeft}
-              initial="hidden"
-              animate={control}
+            <div
+              data-aos="fade-right"
               className="mt-5 max-[1250px]:relative max-[1250px]:mr-auto max-[1250px]:ml-auto"
             >
               <p className="text-[20px] text-[#EAD185] ml-[5rem] max-phone:ml-[2rem]">
@@ -100,18 +65,15 @@ function FindUs() {
                 <img src="/utilities/marker.png" className="mr-1 mt-1" alt="" />
                 <SP>Alte poststraße 460-462 8055 Graz</SP>
               </div>
-            </motion.div>
-            <motion.div
-              ref={ref}
-              variants={boxVariantRight}
-              initial="hidden"
-              animate={control}
+            </div>
+            <div
+              data-aos="fade-left"
               className="p-3 max-[1250px]:relative max-[1250px]:mr-auto max-[1250px]:ml-auto"
             >
               <img src="/utilities/map.png" alt="" />
-            </motion.div>
+            </div>
           </div>
-        </motion.div>
+        </div>
       </div>
     </div>
   );

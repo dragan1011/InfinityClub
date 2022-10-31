@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "animate.css": "^4.1.1",
+    "aos": "^2.3.4",
     "framer-motion": "^7.6.2",
     "next": "12.3.1",
     "rafc": "^1.0.0",
