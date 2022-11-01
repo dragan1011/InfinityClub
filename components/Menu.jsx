@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import { Span, P } from "./UI/Text";
@@ -8,6 +8,12 @@ import "aos/dist/aos.css"; */
 import "swiper/css";
 
 function Menu() {
+  const [menu, setMenu] = useState(false);
+
+  const handleMenu = () => {
+    setMenu(!menu);
+  };
+
   /*  useEffect(() => {
     Aos.init({ duration: 1000 });
   }, []); */
@@ -26,7 +32,7 @@ function Menu() {
           <Swiper spaceBetween={0} slidesPerView={"auto"}>
             <SwiperSlide
               /* data-aos="fade-up" */
-              className="max-w-[200px] text-center items-center justify-center border-x border-[#FFFFFF10] bg-[#EAD18596] py-5 px-10 max-h-[100px] hover:bg-[#EAD18596] duration-300"
+              className="max-w-[200px] text-center items-center justify-center border-x border-[#FFFFFF10] bg-[#EAD18596] py-5 px-10 max-h-[100px] hover:bg-[#EAD18596] duration-300 cursor-pointer"
             >
               <img
                 src="/utilities/Champaigns.png"
@@ -36,9 +42,10 @@ function Menu() {
               <span>Champaigns</span>
             </SwiperSlide>
             <SwiperSlide
+              onClick={handleMenu}
               /* data-aos="fade-up"
               data-aos-delay="100" */
-              className="max-w-[200px] text-center items-center justify-center border-x border-[#FFFFFF10] bg-[#555555] py-6 px-10 max-h-[100px] hover:bg-[#EAD18596] duration-300"
+              className="max-w-[200px] text-center items-center justify-center border-x border-[#FFFFFF10] bg-[#555555] py-6 px-10 max-h-[100px] hover:bg-[#EAD18596] duration-300 cursor-pointer"
             >
               <img
                 src="/utilities/Wine.png"
@@ -50,7 +57,7 @@ function Menu() {
             <SwiperSlide
               /* data-aos="fade-up"
               data-aos-delay="200" */
-              className="max-w-[200px] text-center items-center justify-center border-x border-[#FFFFFF10] bg-[#555555] py-5 px-10 max-h-[100px] hover:bg-[#EAD18596] duration-300"
+              className="max-w-[200px] text-center items-center justify-center border-x border-[#FFFFFF10] bg-[#555555] py-5 px-10 max-h-[100px] hover:bg-[#EAD18596] duration-300 cursor-pointer"
             >
               <img
                 src="/utilities/Coctails.png"
@@ -62,7 +69,7 @@ function Menu() {
             <SwiperSlide
               /* data-aos="fade-up"
               data-aos-delay="300" */
-              className="max-w-[200px] text-center items-center justify-center border-x border-[#FFFFFF10] bg-[#555555] py-6 px-5 max-h-[100px] hover:bg-[#EAD18596] duration-300"
+              className="max-w-[200px] text-center items-center justify-center border-x border-[#FFFFFF10] bg-[#555555] py-6 px-5 max-h-[100px] hover:bg-[#EAD18596] duration-300 cursor-pointer"
             >
               <img
                 src="/utilities/Non-alcoholic.png"
@@ -74,7 +81,7 @@ function Menu() {
             <SwiperSlide
               /*  data-aos="fade-up"
               data-aos-delay="400" */
-              className="max-w-[200px] text-center items-center justify-center border-x border-[#FFFFFF10] bg-[#555555] py-6 px-10] max-h-[100px] hover:bg-[#EAD18596] duration-300"
+              className="max-w-[200px] text-center items-center justify-center border-x border-[#FFFFFF10] bg-[#555555] py-6 px-10] max-h-[100px] hover:bg-[#EAD18596] duration-300 cursor-pointer"
             >
               <img
                 src="/utilities/Food.png"
@@ -151,6 +158,10 @@ function Menu() {
             </div>
           </div>
         </div>
+      </div>
+
+      <div className="text-center">
+        {setMenu && <P>We don't have any data in this moment.</P>}
       </div>
     </div>
   );
