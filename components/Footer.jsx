@@ -1,17 +1,17 @@
 import React, { useEffect } from "react";
 import { Link } from "react-scroll";
 
-import Aos from "aos";
+/* import Aos from "aos";
 import "aos/dist/aos.css";
-
+ */
 function Footer() {
-  useEffect(() => {
+  /* useEffect(() => {
     Aos.init({ duration: 3000 });
-  }, []);
+  }, []); */
   return (
     <div>
       <div
-        data-aos="fade-up"
+        /* data-aos="fade-up" */
         className=" my-[5rem] mx-[10rem] grid grid-cols-6 gap-4 text-[#E5E5E5] max-md:grid-cols-1 max-md:text-center max-md:justify-center max-small-tablet:mx-[2rem]"
       >
         <div>
@@ -27,7 +27,7 @@ function Footer() {
           <div className="">
             <p className="text-[#EAD18559] underline">infinity@email.com</p>
             <img
-              src="/Utilities/dot.png"
+              src="/utilities/dot.png"
               className="md:hidden relative ml-auto mr-auto mt-10 "
               alt="dot"
             />
@@ -40,7 +40,7 @@ function Footer() {
             <span className="text-[#EAD18559] underline">Blueduck</span>
           </p>
           <img
-            src="/Utilities/dot.png"
+            src="/utilities/dot.png"
             className="md:hidden relative ml-auto mr-auto mt-10 "
             alt="dot"
           />
@@ -81,7 +81,7 @@ function Footer() {
           <p className="max-md:ml-5">Imprint</p>
         </div>
         <img
-          src="/Utilities/dot.png"
+          src="/utilities/dot.png"
           className="md:hidden relative ml-auto mr-auto mt-10 "
           alt="dot"
         />

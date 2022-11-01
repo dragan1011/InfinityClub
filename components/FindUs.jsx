@@ -1,20 +1,20 @@
 import React, { useEffect } from "react";
 
 import { SP, SPB } from "./UI/Text";
-
+/* 
 import Aos from "aos";
 import "aos/dist/aos.css";
-
+ */
 function FindUs() {
-  useEffect(() => {
+  /*  useEffect(() => {
     Aos.init({ duration: 1000 });
-  }, []);
+  }, []); */
   return (
     <div id="find_us">
       <div>
         <div
-          data-aos="fade-up"
-          data-aos-duration="3000"
+          /* data-aos="fade-up"
+          data-aos-duration="3000" */
           className="text-6xl ml-[18rem] max-sm:text-4xl text-[50px] text-[#EAD185] font-tacs tracking-custom max-[800px]:ml-[10rem] max-[450px]:ml-[3rem] max-phone:ml-[1rem]"
         >
           <h2>FIND US</h2>
@@ -23,10 +23,13 @@ function FindUs() {
           </p>
         </div>
 
-        <div data-aos="fade-up" data-aos-duration="3000" className="my-[5rem]">
+        <div
+          /* data-aos="fade-up" */ data-aos-duration="3000"
+          className="my-[5rem]"
+        >
           <div className="bg-[#2A2A2A] max-w-[1000px] relative ml-auto mr-auto grid grid-cols-2 max-[1250px]:grid-cols-1 max-[1250px]:text-left max-[1250px]:justify-center">
             <div
-              data-aos="fade-up"
+              /* data-aos="fade-up" */
               className="mt-5 max-[1250px]:relative max-[1250px]:mr-auto max-[1250px]:ml-auto"
             >
               <p className="text-[20px] text-[#EAD185] ml-[5rem] max-phone:ml-[2rem]">
@@ -67,7 +70,7 @@ function FindUs() {
               </div>
             </div>
             <div
-              data-aos="fade-up"
+              /* data-aos="fade-up" */
               className="p-3 max-[1250px]:relative max-[1250px]:mr-auto max-[1250px]:ml-auto"
             >
               <img src="/utilities/map.png" alt="" />

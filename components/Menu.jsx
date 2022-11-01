@@ -2,30 +2,30 @@ import React, { useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import { Span, P } from "./UI/Text";
-import Aos from "aos";
-import "aos/dist/aos.css";
+/* import Aos from "aos";
+import "aos/dist/aos.css"; */
 
 import "swiper/css";
 
 function Menu() {
-  useEffect(() => {
+  /*  useEffect(() => {
     Aos.init({ duration: 1000 });
-  }, []);
+  }, []); */
 
   return (
     <div id="menu">
       <h2
-        data-aos="fade-up"
-        data-aos-duration="3000"
+        /*   data-aos="fade-up"
+        data-aos-duration="3000" */
         className="text-6xl mx-[18rem] max-sm:text-4xl uppercase text-[50px] text-[#EAD185] font-tacs tracking-custom max-md:ml-[10rem] max-phone:ml-[1rem]"
       >
         Our Menu
       </h2>
       <div className="my-[5rem]">
         <div className="max-w-[1000px] relative ml-auto mr-auto ">
-          <Swiper spaceBetween={0} slidesPerView={"auto"} loop={true}>
+          <Swiper spaceBetween={0} slidesPerView={"auto"}>
             <SwiperSlide
-              data-aos="fade-up"
+              /* data-aos="fade-up" */
               className="max-w-[200px] text-center items-center justify-center border-x border-[#FFFFFF10] bg-[#EAD18596] py-5 px-10 max-h-[100px] hover:bg-[#EAD18596] duration-300"
             >
               <img
@@ -36,9 +36,9 @@ function Menu() {
               <span>Champaigns</span>
             </SwiperSlide>
             <SwiperSlide
-              data-aos="fade-up"
-              data-aos-delay="100"
-              className="max-w-[200px] text-center items-center justify-center border-x border-[#FFFFFF10] bg-[#2A2A2A] py-6 px-10 max-h-[100px] hover:bg-[#EAD18596] duration-300"
+              /* data-aos="fade-up"
+              data-aos-delay="100" */
+              className="max-w-[200px] text-center items-center justify-center border-x border-[#FFFFFF10] bg-[#555555] py-6 px-10 max-h-[100px] hover:bg-[#EAD18596] duration-300"
             >
               <img
                 src="/utilities/Wine.png"
@@ -48,9 +48,9 @@ function Menu() {
               <span>Wine</span>
             </SwiperSlide>
             <SwiperSlide
-              data-aos="fade-up"
-              data-aos-delay="200"
-              className="max-w-[200px] text-center items-center justify-center border-x border-[#FFFFFF10] bg-[#2A2A2A] py-5 px-10 max-h-[100px] hover:bg-[#EAD18596] duration-300"
+              /* data-aos="fade-up"
+              data-aos-delay="200" */
+              className="max-w-[200px] text-center items-center justify-center border-x border-[#FFFFFF10] bg-[#555555] py-5 px-10 max-h-[100px] hover:bg-[#EAD18596] duration-300"
             >
               <img
                 src="/utilities/Coctails.png"
@@ -60,9 +60,9 @@ function Menu() {
               <span>Coctails</span>
             </SwiperSlide>
             <SwiperSlide
-              data-aos="fade-up"
-              data-aos-delay="300"
-              className="max-w-[200px] text-center items-center justify-center border-x border-[#FFFFFF10] bg-[#2A2A2A] py-6 px-5 max-h-[100px] hover:bg-[#EAD18596] duration-300"
+              /* data-aos="fade-up"
+              data-aos-delay="300" */
+              className="max-w-[200px] text-center items-center justify-center border-x border-[#FFFFFF10] bg-[#555555] py-6 px-5 max-h-[100px] hover:bg-[#EAD18596] duration-300"
             >
               <img
                 src="/utilities/Non-alcoholic.png"
@@ -72,9 +72,9 @@ function Menu() {
               <span>Non-alcoholic</span>
             </SwiperSlide>
             <SwiperSlide
-              data-aos="fade-up"
-              data-aos-delay="400"
-              className="max-w-[200px] text-center items-center justify-center border-x border-[#FFFFFF10] bg-[#2A2A2A] py-6 px-10] max-h-[100px] hover:bg-[#EAD18596] duration-300"
+              /*  data-aos="fade-up"
+              data-aos-delay="400" */
+              className="max-w-[200px] text-center items-center justify-center border-x border-[#FFFFFF10] bg-[#555555] py-6 px-10] max-h-[100px] hover:bg-[#EAD18596] duration-300"
             >
               <img
                 src="/utilities/Food.png"
@@ -86,7 +86,7 @@ function Menu() {
           </Swiper>
         </div>
         <div className="ml-[15rem] grid grid-cols-2 max-[1250px]:grid-cols-1 max-md:ml-[6rem] max-small-tablet:ml-[5rem] max-big-phone:ml-[3rem] max-small-phone:ml-[1rem] ">
-          <div data-aos="fade-up" className="grid grid-cols-2 gap-4">
+          <div /* data-aos="fade-up" */ className="grid grid-cols-2 gap-4">
             <div className="flex flex-col">
               <Span>Heißgetränke</Span>
               <P>Verlängerter</P>
@@ -110,7 +110,7 @@ function Menu() {
               <P>2.60 €</P>
             </div>
           </div>
-          <div data-aos="fade-up" className="grid grid-cols-2 gap-4 ">
+          <div /* data-aos="fade-up" */ className="grid grid-cols-2 gap-4 ">
             <div className="flex flex-col">
               <Span>Bio-Limonaden</Span>
               <P>Lemon Prickelnd</P>
@@ -132,7 +132,9 @@ function Menu() {
               <P>3.90 €</P>
             </div>
           </div>
-          <div data-aos="fade-up" className="grid grid-cols-2 gap-4 mt-10">
+          <div
+            /* data-aos="fade-up" */ className="grid grid-cols-2 gap-4 mt-10"
+          >
             <div className="flex flex-col">
               <Span>Soda, Mineral</Span>
               <P>Römerquelle Prickelnd</P>

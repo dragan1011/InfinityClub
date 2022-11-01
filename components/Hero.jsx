@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import Button from "./UI/Button";
-import "animate.css";
+/* import "animate.css"; */
 
 const Hero = () => {
   return (
@@ -31,7 +31,7 @@ const Hero = () => {
       <div className="absolute text-[#E5E5E5] left-0 right-2/4 bottom-32 text-lg z-20 animate__animated animate__fadeInUp">
         <div>Follow Us On</div>
       </div>
-      <div className="absolute left-1/4 right-0 bottom-24 text-lg z-20 animate__animated animate__fadeInUp">
+      <div className="absolute left-1/4 right-0 bottom-24 text-lg mt-10 z-20 animate__animated animate__fadeInUp">
         <div className="flex">
           <Link href="https://www.facebook.com">
             <img
