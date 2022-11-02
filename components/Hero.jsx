@@ -27,11 +27,11 @@ const Hero = () => {
         <Button>Our Menu</Button>
       </div>
 
-      <div className="absolute top-[65%] left-0 right-0 bottom-0 bg-gradient-to-t from-[#202020] z-20" />
-      <div className="absolute text-[#E5E5E5] left-0 right-2/4 bottom-32 text-lg z-20 animate__animated animate__fadeInUp">
+      <div className="absolute top-[65%] left-0 right-0 bottom-0 bg-gradient-to-t from-[#202020] z-20 " />
+      <div className="absolute text-[#E5E5E5] left-0 right-2/4 bottom-32 text-lg z-20 max-md:bottom-[8%]">
         <div>Follow Us On</div>
       </div>
-      <div className="absolute left-1/4 right-0 bottom-24 text-lg mt-10 z-20 animate__animated animate__fadeInUp">
+      <div className="absolute left-1/4 right-0 bottom-24 text-lg mt-10 z-20 max-md:bottom-[5%]">
         <div className="flex">
           <Link href="https://www.facebook.com">
             <img

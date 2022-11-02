@@ -10,7 +10,7 @@ function About() {
     <div id="about">
       <h2
         /* data-aos="fade-up" */
-        className="text-6xl mx-[18rem] max-sm:text-4xl max-w-[50px] uppercase text-[50px] text-[#EAD185] font-tacs tracking-custom max-[800px]:ml-[10rem] max-[350px]:ml-[3rem] max-phone:ml-[1rem]"
+        className="text-6xl mx-[18rem] max-sm:text-4xl max-w-[50px] uppercase text-[50px] text-[#EAD185] font-tacs tracking-custom max-[800px]:ml-[6rem] max-phone:ml-[1rem]"
       >
         About Infinity
       </h2>
