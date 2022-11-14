@@ -90,9 +90,9 @@ function Footer() {
         <p className="text-[#E5E5E550] mr-[auto] ml-[10rem] max-md:ml-[0] max-md:text-[#E5E5E550] max-md:underline">
           Copyright © 2021 Infinity All Rights Reserved
         </p>
-        <p className="text-[#E5E5E550] ml-[auto] mr-5 max-md:invisible">
+        <p className="text-[#E5E5E550] ml-[auto] mr-10 max-md:invisible">
           Designed and developed by
-          <span className="text-[#EAD18559] underline ml-1">Blueduck</span>
+          <span className="text-[#EAD18559] underline ml-3">Blueduck</span>
         </p>
       </div>
     </div>
