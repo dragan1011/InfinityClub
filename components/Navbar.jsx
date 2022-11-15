@@ -7,9 +7,11 @@ function Navbar() {
   const [textColor, setTextColor] = useState("white");
   const [display, setDisplay] = useState("none");
   const [shadow, setShadow] = useState("none");
+  const [navChange, setNavChange] = useState(false);
 
   const handleNav = () => {
     setnav(!nav);
+    setNavChange(!navChange);
   };
 
   useEffect(() => {
@@ -163,11 +165,44 @@ function Navbar() {
 
         {/*Mobile Button*/}
         <div
-          className="block sm:hidden z-10 cursor-pointer"
+          className="sm:hidden z-10 cursor-pointer relative flex justify-center items-center w-[80px] h-[80px] transition ease-in-out delay-500"
           style={{ color: `${textColor}` }}
           onClick={handleNav}
         >
-          <img src="/utilities/menu-bar.png" sizes={20} alt="menu_bar" />
+          {!navChange && (
+            <div
+              className="w-[50px] h-[6px] bg-[#EAD185] rounded-[5px] shadow-[0 2px 5px rgba(255,101,47 , .2)] transition ease-in-out delay-500
+          before:content-['']
+          before:absolute
+          before:w-[50px]
+          before:h-[6px]
+          before:rounded-[5px]
+          before:bg-[#EAD185]
+          before:shadow-[0 2px 5px rgba(255,101,47 , .2)]
+          before:transition 
+          before:ease-in-out 
+          before:delay-500
+          before:translate-y-[-16px]
+          after:content-['']
+          after:absolute
+          after:w-[50px]
+          after:rounded-[5px]
+          after:h-[6px]
+          after:bg-[#EAD185]
+          after:shadow-[0 2px 5px rgba(255,101,47 , .2)]
+          after:transition 
+          after:ease-in-out 
+          after:delay-500
+          after:translate-y-[16px]
+          transition ease-in-out delay-150"
+            ></div>
+          )}
+          {navChange && (
+            <div className="transition ease-in-out delay-150">
+              <div className="w-[50px] h-[6px] bg-[#EAD185]  rounded-[5px] shadow-[0 2px 5px rgba(255,101,47 , .2)] transition ease-in-out delay-500 rotate-45 absolute top-2/4 left-3"></div>
+              <div className="w-[50px] h-[6px] bg-[#EAD185]  rounded-[5px] shadow-[0 2px 5px rgba(255,101,47 , .2)] transition ease-in-out delay-500 rotate-[-45deg] absolute top-2/4 left-3"></div>
+            </div>
+          )}
         </div>
         {/*Mobile Menu*/}
         <div
