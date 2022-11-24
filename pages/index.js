@@ -11,7 +11,7 @@ export default function Home() {
     <div>
       <Head>
         <title>InfinityClub</title>
-        <meta name="robots" />
+        <meta name="description" content='InfinityClub' />
         <link rel="icon" href="/favicon.png" />
       </Head>
       <Hero />   

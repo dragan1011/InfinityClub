@@ -42,7 +42,7 @@ function Navbar() {
         <a href="#hero">
           <img
             src="/utilities/logo.png"
-            className="w-[158px] h-[74px] max-sm:scale-75 max-phone:hidden"
+            className="w-[175px] h-[74px] max-sm:scale-75 max-phone:hidden"
             alt="logo"
           />
         </a>

@@ -18,7 +18,7 @@ function Footer() {
           <Link href="hero">
             <img
               src="/utilities/logo.png"
-              className="w-[158px] h-[74px] relative ml-auto mr-auto"
+              className="w-[175px] h-[74px] relative ml-auto mr-auto"
               alt="logo"
             />
           </Link>
