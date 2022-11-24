@@ -16,6 +16,7 @@ const Hero = () => {
         <img
           className="inline-block max-sm:mt-20 max-sm:scale-75 animate__animated animate__fadeInUp"
           src="/utilities/infinity_logo_2.png"
+          alt="logo"
         />
         <h2 className="text-6xl max-sm:text-4xl font-tacs animate__animated animate__fadeInUp">
           Bar & Restaurant
@@ -40,13 +41,13 @@ const Hero = () => {
               alt="Facebook"
             />
           </Link>
-          <Link href="https://www.instagram.com">
+          <a href="https://www.instagram.com">
             <img
               src="/utilities/instagram.png"
               className="cursor-pointer"
               alt="Intagram"
             />
-          </Link>
+          </a>
         </div>
       </div>
     </div>
