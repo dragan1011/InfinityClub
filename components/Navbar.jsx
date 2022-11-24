@@ -39,13 +39,13 @@ function Navbar() {
       className="fixed left-0 top-0 w-full ease-in duration-300 z-30"
     >
       <div className="max-w-[1240px] m-auto text-xl flex justify-between items-center p-4 text-[#AFAFAF]">
-        <Link to="hero">
+        <a href="#hero">
           <img
             src="/utilities/logo.png"
             className="max-sm:scale-75 max-phone:hidden"
             alt="logo"
           />
-        </Link>
+        </a>
         <ul style={{ color: `${textColor}` }} className="hidden sm:flex">
           <li className="p-4 hover:text-[#EAD185] transition-all">
             <a
