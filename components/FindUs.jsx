@@ -65,7 +65,11 @@ function FindUs() {
                 LOCATION
               </p>
               <div className="flex justify-self-start items-start flex-1 min-w-0 min-h-0 ml-[7rem] mt-5 max-[1250px]:relative max-[1250px]:mr-auto max-[1250px]:ml-auto">
-                <img src="/utilities/marker.png" className="mr-1 mt-1" alt="" />
+                <img
+                  src="/utilities/marker.png"
+                  className="mr-1 mt-1"
+                  alt="marker"
+                />
                 <SP>Alte poststraße 460-462 8055 Graz</SP>
               </div>
             </div>
@@ -73,7 +77,7 @@ function FindUs() {
               /* data-aos="fade-up" */
               className="p-3 max-[1250px]:relative max-[1250px]:mr-auto max-[1250px]:ml-auto"
             >
-              <img src="/utilities/map.png" alt="" />
+              <img src="/utilities/map.png" alt="map" />
             </div>
           </div>
         </div>

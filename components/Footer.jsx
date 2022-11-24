@@ -19,6 +19,7 @@ function Footer() {
             <img
               src="/utilities/logo.png"
               className=" relative ml-auto mr-auto"
+              alt="logo"
             />
           </Link>
           <p className="text-[#E5E5E5] mt-[10px] mb-[15px] w-[100%]">

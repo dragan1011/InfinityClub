@@ -43,12 +43,13 @@ function Navbar() {
           <img
             src="/utilities/logo.png"
             className="max-sm:scale-75 max-phone:hidden"
+            alt="logo"
           />
         </Link>
         <ul style={{ color: `${textColor}` }} className="hidden sm:flex">
           <li className="p-4 hover:text-[#EAD185] transition-all">
-            <Link
-              to="hero"
+            <a
+              href="#hero"
               spy={true}
               smooth={true}
               offset={50}
@@ -73,11 +74,11 @@ function Navbar() {
               hover:before:opacity-100"
             >
               Home
-            </Link>
+            </a>
           </li>
           <li className="p-4 hover:text-[#EAD185] duration-300">
-            <Link
-              to="about"
+            <a
+              href="#about"
               smooth={true}
               offset={50}
               duration={500}
@@ -101,11 +102,11 @@ function Navbar() {
               hover:before:opacity-100"
             >
               About
-            </Link>
+            </a>
           </li>
           <li className="p-4 hover:text-[#EAD185] duration-300">
-            <Link
-              to="find_us"
+            <a
+              href="#find_us"
               spy={true}
               smooth={true}
               offset={50}
@@ -130,11 +131,11 @@ function Navbar() {
               hover:before:opacity-100"
             >
               Location
-            </Link>
+            </a>
           </li>
           <li className="p-4 hover:text-[#EAD185] duration-300">
-            <Link
-              to="menu"
+            <a
+              href="#menu"
               spy={true}
               smooth={true}
               offset={50}
@@ -159,7 +160,7 @@ function Navbar() {
               hover:before:opacity-100"
             >
               Menu
-            </Link>
+            </a>
           </li>
         </ul>
 
@@ -214,8 +215,8 @@ function Navbar() {
         >
           <ul>
             <li className="p-4 text-4xl hover:text-[#EAD185]">
-              <Link
-                to="hero"
+              <a
+                href="#hero"
                 spy={true}
                 smooth={true}
                 offset={50}
@@ -223,11 +224,11 @@ function Navbar() {
                 className="cursor-pointer"
               >
                 Home
-              </Link>
+              </a>
             </li>
             <li className="p-4 text-4xl hover:text-[#EAD185]">
-              <Link
-                to="about"
+              <a
+                href="#about"
                 spy={true}
                 smooth={true}
                 offset={50}
@@ -235,11 +236,11 @@ function Navbar() {
                 className="cursor-pointer"
               >
                 About
-              </Link>
+              </a>
             </li>
             <li className="p-4 text-4xl hover:text-[#EAD185]">
-              <Link
-                to="about"
+              <a
+                href="#about"
                 spy={true}
                 smooth={true}
                 offset={50}
@@ -247,11 +248,11 @@ function Navbar() {
                 className="cursor-pointer"
               >
                 Location
-              </Link>
+              </a>
             </li>
             <li className="p-4 text-4xl hover:text-[#EAD185]">
-              <Link
-                to="about"
+              <a
+                href="#about"
                 spy={true}
                 smooth={true}
                 offset={50}
@@ -259,16 +260,16 @@ function Navbar() {
                 className="cursor-pointer"
               >
                 Menu
-              </Link>
+              </a>
             </li>
           </ul>
         </div>
       </div>
-      <Link style={{ display: `${display}` }} to="hero">
+      <a style={{ display: `${display}` }} href="#hero">
         <div className="absolute right-10 top-[90vh] cursor-pointer border-solid border-2 border-[#EAD185] rounded-full text-[#EAD185] rotate-90 pr-2 pl-2 pt-0 pb-[2px]">
           &lt;
         </div>
-      </Link>
+      </a>
     </div>
   );
 }
