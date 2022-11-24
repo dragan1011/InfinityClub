@@ -47,35 +47,35 @@ function Footer() {
           />
         </div>
         <div className="max-md:hidden">
-          <Link
-            to="about"
+          <a
+            href="#about"
             smooth={true}
             offset={50}
             duration={500}
             className="cursor-pointer"
           >
             About
-          </Link>
+          </a>
           <p></p>
-          <Link
-            to="about"
+          <a
+            href="#about"
             smooth={true}
             offset={50}
             duration={500}
             className="cursor-pointer"
           >
             Menu
-          </Link>
+          </a>
           <p></p>
-          <Link
-            to="about"
+          <a
+            href="#about"
             smooth={true}
             offset={50}
             duration={500}
             className="cursor-pointer"
           >
             Find Us
-          </Link>
+          </a>
         </div>
         <div className="max-md:flex justify-center max-md:text-[#E5E5E550] max-md:underline">
           <p>Privacy Policy</p>
