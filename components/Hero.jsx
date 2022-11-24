@@ -14,7 +14,7 @@ const Hero = () => {
       <div className="absolute top-0 left-0 right-0 bottom-0  bg-black/30 z-[2]" />
       <div className="p-5 text-[#EAD185] text-heading z-[2] mt-[-10rem]">
         <img
-          className="inline-block max-sm:mt-20 max-sm:scale-75 animate__animated animate__fadeInUp"
+          className="w-[274px] h-[115px] inline-block max-sm:mt-20 max-sm:scale-75 animate__animated animate__fadeInUp"
           src="/utilities/infinity_logo_2.png"
           alt="logo"
         />
@@ -37,14 +37,14 @@ const Hero = () => {
           <Link href="https://www.facebook.com">
             <img
               src="/utilities/facebook.png"
-              className="mr-2 -ml-14 cursor-pointer"
+              className="w-[25px] h-[25px] mr-2 -ml-14 cursor-pointer"
               alt="Facebook"
             />
           </Link>
           <a href="https://www.instagram.com">
             <img
               src="/utilities/instagram.png"
-              className="cursor-pointer"
+              className="w-[25px] h-[25px] cursor-pointer"
               alt="Intagram"
             />
           </a>

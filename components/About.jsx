@@ -38,7 +38,7 @@ function About() {
           <img
             /* data-aos="fade-up" */
             src="/utilities/dance.png"
-            className="mt-[90px] max-[1250px]:mt-[30px] max-[520px]:max-w-[300px] max-[520px]:relative max-[520px]:ml-auto max-[520px]:mr-auto max-[305px]:max-w-[200px]"
+            className="w-[519px] h-[527px] mt-[90px] max-[1250px]:mt-[30px] max-[520px]:max-w-[300px] max-[520px]:relative max-[520px]:ml-auto max-[520px]:mr-auto max-[305px]:max-w-[200px]"
             alt="Dance"
           />
         </div>
@@ -49,7 +49,7 @@ function About() {
           <img
             src="/utilities/club.png"
             alt="Club"
-            className="max-[1250px]:mt-[30px] max-[520px]:max-w-[300px] max-[520px]:relative max-[520px]:ml-auto max-[520px]:mr-auto max-[305px]:max-w-[200px]"
+            className="w-[577px] h-[630px] max-[1250px]:mt-[30px] max-[520px]:max-w-[300px] max-[520px]:relative max-[520px]:ml-auto max-[520px]:mr-auto max-[305px]:max-w-[200px]"
           />
           <div className="max-w-[450px] text-[#959595] ml-[40px] max-[305px]:w-[200px] max-[270px]:ml-[0]">
             <p /* data-aos="fade-up"  */ className="mt-[30px]">

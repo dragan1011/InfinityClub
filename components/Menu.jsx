@@ -49,7 +49,7 @@ function Menu() {
               <img
                 src="/utilities/Champaigns.png"
                 alt="Champaigns"
-                className="realtive ml-auto mr-auto"
+                className="w-[37px] h-[38px] realtive ml-auto mr-auto"
               />
               <span>Champaigns</span>
             </SwiperSlide>
@@ -65,7 +65,7 @@ function Menu() {
               <img
                 src="/utilities/Wine.png"
                 alt="Wine"
-                className="realtive ml-auto mr-auto"
+                className="w-[26px] h-[35px] realtive ml-auto mr-auto"
               />
               <span>Wine</span>
             </SwiperSlide>
@@ -83,7 +83,7 @@ function Menu() {
               <img
                 src="/utilities/Coctails.png"
                 alt="Coctails"
-                className="realtive ml-auto mr-auto"
+                className="w-[34px] h-[39px] realtive ml-auto mr-auto"
               />
               <span>Coctails</span>
             </SwiperSlide>
@@ -101,7 +101,7 @@ function Menu() {
               <img
                 src="/utilities/Non-alcoholic.png"
                 alt="Non-alcoholic"
-                className="realtive ml-auto mr-auto"
+                className="w-[22px] h-[31px] realtive ml-auto mr-auto"
               />
               <span>Non-alcoholic</span>
             </SwiperSlide>
@@ -118,7 +118,7 @@ function Menu() {
               <img
                 src="/utilities/Food.png"
                 alt="Food"
-                className="realtive ml-auto mr-auto"
+                className="w-[36px] h-[33px] realtive ml-auto mr-auto"
               />
               <span>Food</span>
             </SwiperSlide>
